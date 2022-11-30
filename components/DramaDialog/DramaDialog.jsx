@@ -5,8 +5,8 @@ import DramaListItem from "../DramaListItem";
 import DemoVideo from '../DemoVideo';
 import DialogAudio from '../DialogAudio';
 import DialogLine from '../DialogLine';
+import { styles } from '../../styles';
 import { dramas } from '../../__fixtures__';
-
 
 const dramaRecord = dramas[0];
 const drama = dramaRecord.dialog;
@@ -23,7 +23,7 @@ function DramaDialog(props) {
       </VStack>
       {lines.map(line =>
         <VStack key={line._id}>
-          <Box flex={1} justifyContent="space-around">
+          <Box style={styles.dialogLineContainer} flex={1} justifyContent="space-around">
             <DialogLine dialogLine={line} characters={drama.characters} currentCharacter={drama.characters[0]} />
           </Box>
         </VStack>

@@ -17,7 +17,7 @@ function VoiceRecorder() {
       });
 
       console.log('Starting recording..');
-      const { recording } = await Audio.Recording.createAsync( Audio.RecordingOptionsPresets.HIGH_QUALITY
+      const { recording } = await Audio.Recording.createAsync(Audio.RecordingOptionsPresets.HIGH_QUALITY
       );
       setRecording(recording);
       console.log('Recording started');
@@ -54,11 +54,11 @@ function VoiceRecorder() {
         onPress={recording ? stopRecording : startRecording}
       />
       {
-        recordingUri ? 
-      <Button
-        title="Play Back"
-        onPress={playRecording}
-      /> : ''
+        recordingUri ?
+          <Button
+            title="Play Back"
+            onPress={playRecording}
+          /> : ''
       }
     </View>
   );
@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: 10,
   },
 });
 

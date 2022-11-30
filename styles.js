@@ -22,26 +22,35 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'white'
+    color: 'white',
+    marginLeft: 5
   },
   dialogText: {
-    fontSize: 15,
-    color: 'white'
+    fontSize: 20,
+    color: 'white',
+    marginLeft: 20,
+    paddingVertical: 20,
   },
   videoContainer: {
     flex: 1,
-    paddingTop: 58,    
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 3,
   },
   video: {
-    width: 320,
-    height: 440,
+    height: 320,
     borderRadius: 18,
   },
+  dialogLineContainer: {
+    marginVertical: 10,
+  },
   characterMe: {
-    backgroundColor: "olive"
+    paddingVertical: 20,
+    backgroundColor: "#ee692f"
   },
   characterYou: {
-    backgroundColor: "plum"
+    paddingVertical: 20,
+    backgroundColor: "#00bd0d"
   }
 });
 
